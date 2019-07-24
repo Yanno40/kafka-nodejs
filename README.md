@@ -16,7 +16,9 @@ git init
 
 npm install kafka-node --save 
     - install kafka-node lib
+
 Setting up config file
+
 Produce some code (admin, producer, consumer1 & consumer 2)
 
 - Dockerfile creation
