@@ -11,11 +11,9 @@ This allows to create a container Node in our cluster with 4 clients kafka :
 
 - Node app
 
-git init  
-    - generate package.json file
+git init     // generate package.json file
 
-npm install kafka-node --save 
-    - install kafka-node lib
+npm install kafka-node --save    // install kafka-node lib
 
 Setting up config file
 
