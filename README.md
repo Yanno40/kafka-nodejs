@@ -13,6 +13,7 @@ This allows to create a container Node in our cluster with 4 clients kafka :
 
 git init  
     - generate package.json file
+
 npm install kafka-node --save 
     - install kafka-node lib
 Setting up config file
