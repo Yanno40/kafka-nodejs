@@ -1,0 +1,17 @@
+{
+  "name": "kafka-nodejs",
+  "version": "1.0.0",
+  "description": "test kafka",
+  "main": "index.js",
+  "dependencies": {
+    "kafka-node": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node producer.js",
+    "dev": "nodemon producer.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-kafka
+  namespace: test-kafka
+spec:
+  selector:
+    matchLabels:
+      app: node-kafka
+  template:
+    metadata:
+      labels:
+        app: node-kafka
+    spec:
+      containers:
+      - args:
+        - while true; do sleep 30; done;
+        command:
+        - /bin/sh
+        - -c
+        - --
+        env:
+        - name: HOSTKAFKA
+          value: kafka-1-cp-kafka-headless:9092
+        image: 133845867148.dkr.ecr.eu-west-1.amazonaws.com/kafka-node:4
+        name: node-kafka
+        ports:
+        - containerPort: 8080
+          protocol: TCP
